@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+ <model name="belt">
+    <link name="link">
+     <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>100</mass>
+        <inertia>
+          <ixx>800</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>50.73 </iyy>
+          <iyz>0.0</iyz>
+          <izz>800</izz> 
+        </inertia>
+     </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://belt/meshes/Belt.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://belt/meshes/Belt.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
