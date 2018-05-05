@@ -1,0 +1,398 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+
+ 
+    <include>
+      <uri>model://belt</uri>
+      <name>belt1</name>
+      <pose>0 -0.2 0 0 0 1.55</pose>
+    </include>
+
+
+   <include>
+      <uri>model://workcell_bin</uri>
+      <name>workbin1</name>
+      <pose>-3.5 1 0 0 0 0</pose>
+    </include>
+
+
+    
+     <model name="cylinder1">
+      <pose>-3.7 0.4 0 0 0 1.55</pose>
+      <link name="cylinder1">
+        <collision name="collision">
+          <geometry>
+             <cylinder>
+             <radius>0.15</radius>
+             <length>0.8</length>
+          </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+           <cylinder>
+             <radius>0.15</radius>
+             <length>0.8</length>
+          </cylinder>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Brown</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+    </model>   
+  
+
+     <model name="box1">
+      <pose>-3.7 0.8 0.9 0 0 0</pose>
+      <link name="box1">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Blue</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+    <model name="box2">
+      <pose>-3.4 0.8 0.9 0 0 0</pose>
+      <link name="box2">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Blue</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+    <model name="box3">
+      <pose>-3.7 1.1 0.9 0 0 0</pose>
+      <link name="box3">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Blue</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+   <model name="box4">
+      <pose>-3.4 1.1 0.9 0 0 0</pose>
+      <link name="box4">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Blue</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+
+
+   
+
+    <include>
+      <uri>model://workcell_bin</uri>
+      <name>workbin2</name>
+      <pose>0.5 1 0 0 0 0</pose>
+    </include>
+
+
+     <model name="cylinder2">
+      <pose>0.5 0.4 0 0 0 1.55</pose>
+      <link name="cylinder2">
+        <collision name="collision">
+          <geometry>
+             <cylinder>
+             <radius>0.15</radius>
+             <length>0.8</length>
+          </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+           <cylinder>
+             <radius>0.15</radius>
+             <length>0.8</length>
+          </cylinder>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Brown</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+    </model>   
+
+
+     <model name="box5">
+      <pose>0.3 0.8 0.9 0 0 0</pose>
+      <link name="box5">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Red</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>  
+
+    <model name="box6">
+      <pose>0.7 0.8 2.0 0 0 0</pose>
+      <link name="box6">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Red</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+    <model name="box7">
+      <pose>0.3 1.1 0.9 0 0 0</pose>
+      <link name="box7">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Red</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+   <model name="box8">
+      <pose>0.7 1.1 0.9 0 0 0</pose>
+      <link name="box8">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Red</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+     <!-- <plugin name="model_push" filename="libmodel_push.so"/> -->
+    </model>   
+
+
+    <include>
+      <uri>model://workcell_bin</uri>
+      <name>workbin3</name>
+      <pose>4.2 1 0 0 0 0</pose>
+    </include>
+
+    <model name="cylinder3">
+      <pose>4.2 0.4 0 0 0 1.55</pose>
+      <link name="cylinder3">
+        <collision name="collision">
+          <geometry>
+             <cylinder>
+             <radius>0.15</radius>
+             <length>0.8</length>
+          </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+           <cylinder>
+             <radius>0.15</radius>
+             <length>0.8</length>
+          </cylinder>
+          </geometry>
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Brown</name>
+      		</script>
+    	  </material>
+        </visual>	
+      </link>
+    </model>   
+
+
+
+   <model name="box_m">
+      <pose>-4.0 -0.2 0.9 0 0 0</pose>
+      <link name="box_m">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+
+	  <material>
+		<script>
+        		<uri>file://media/materials/scripts/gazebo.material</uri>
+        		<name>Gazebo/Blue</name>
+      		</script>
+    	  </material>
+        </visual>
+      </link>
+
+    <plugin name="model_push" filename="libmodel_push.so"/> 
+    </model>        
+
+
+
+<!-- export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/gazebo_plugin_tutorial/build -->
+<!-- echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc -->
+
+<!-- echo "export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:~/gazebo_plugin_tutorial/build" >> ~/.bashrc -->
+
+<!-- 
+   <include>
+      <uri>model://gas_station</uri>
+      <name>gas_station</name>
+      <pose>-2.0 7.0 0 0 0 0</pose>
+    </include>
+ -->
+
+  </world>
+</sdf>
